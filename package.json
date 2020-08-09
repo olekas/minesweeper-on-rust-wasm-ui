@@ -4,7 +4,7 @@
   "description": "Minesweeper game based on rust-generated wasm package",
   "main": "index.js",
   "scripts": {
-    "wasm": "wasm-pack build --no-typescript --out-dir ../wasm minesweeper-on-rust || exit 0",
+    "wasm": "wasm-pack build --no-typescript --out-dir ../wasm minesweeper-on-rust",
     "build": "webpack --config webpack.config.js",
     "start": "webpack-dev-server"
   },
