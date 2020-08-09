@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Chilanka:400&display=swap" rel="stylesheet">
+    <title>Minesweeper on Rust</title>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div class="game-container">
+      <div class="game-controls">
+        <button class="game-button" id="game-btn-recreate">Recreate</button>
+        <button class="game-button" id="game-btn-replay">Replay</button>
+        <div class="game-label">Rows:</div>
+        <input class="game-input" id="rows-value" type="number"/>
+        <div class="game-label">Columns:</div>
+        <input class="game-input" id="cols-value" type="number"/>
+        <div class="game-label">% Mined:</div>
+        <input class="game-input"  id="mined-pers-value" type="number"/>
+        <div class="game-label">Count down:</div>
+        <input type="text" class="game-count-down" id="count-down-value" disabled>
+      </div> 
+    <div class="play-container">
+      <div class="grid-container"></div>
+    </div>
+  </div>
+  <script src="./bootstrap.js"></script>
+  </body>
+</html>

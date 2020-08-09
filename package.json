@@ -1,0 +1,32 @@
+{
+  "name": "minesweeper-on-rust-wasm-ui",
+  "version": "0.1.0",
+  "description": "Minesweeper game based on rust-generated wasm package",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olegkas4/minesweeper-on-rust-wasm-ui.git"
+  },
+  "keywords": [
+    "webassembly",
+    "wasm",
+    "rust",
+    "webpack"
+  ],
+  "author": "Oleg Kashaev <oleg.kashaev.4@gmail.com>",
+  "license": "(MIT OR Apache-2.0)",
+  "bugs": {
+    "url": "https://github.com/olegkas4/minesweeper-on-rust-wasm-ui/issues"
+  },
+  "homepage": "https://github.com/olegkas4/minesweeper-on-rust-wasm-ui#readme",
+  "devDependencies": {
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5",
+    "copy-webpack-plugin": "^5.0.0"
+  }
+}

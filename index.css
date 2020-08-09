@@ -1,0 +1,178 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./img/alien-planet.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+}
+.cell {
+  padding: 0;
+  margin: 1px;
+  width: 2rem;
+  height: 2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid lightslategrey;
+  border-radius: 0.3rem;
+  background-size: cover;
+  background-position: center;
+}
+.cell-digged0 {
+  background-color: transparent;
+  opacity: 0.7;
+}
+.cell-digged1 {
+  background-image: url("./img/digged1.png");
+}
+
+.cell-digged2 {
+  background-image: url("./img/digged2.png");
+}
+.cell-digged3 {
+  background-image: url("./img/digged3.png");
+}
+.cell-digged4 {
+  background-image: url("./img/digged4.png");
+}
+.cell-digged5 {
+  background-image: url("./img/digged5.png");
+}
+.cell-digged6 {
+  background-image: url("./img/digged6.png");
+}
+.cell-digged7 {
+  background-image: url("./img/digged7.png");
+}
+.cell-digged8 {
+  background-image: url("./img/digged8.png");
+}
+.cell-hidden {
+  background-color: white;
+  opacity: 0.2;
+}
+.cell-flagged {
+  background-image: url("./img/skull200x200.png");
+  border: 1px solid darkred;
+}
+.cell-explosion {
+  background-image: url("./img/boom200x200.png");
+  filter: brightness(150%);
+}
+.cell-mined {
+  background-image: url("./img/mine200x200.png");
+}
+.cell:hover {
+  opacity: 0.6;
+}
+.row-container {
+  display: flex;
+  flex-direction: row;
+}
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.game-win {
+  cursor: unset;
+  background-image: url("./img/win.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+}
+.game-lose {
+  cursor: unset;
+  background-image: url("./img/lose.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+}
+.game-controls {
+  margin-top: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  opacity: 0.8;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  color: white;
+}
+.game-split {
+  flex-grow: 1;
+}
+.game-button {
+  margin: 0.2rem;
+  height: 1.5rem;
+  width: 8rem;
+  border: 1px solid lightgray;
+  justify-content: center;
+  border-radius: 0.3rem;
+  font-size: 100%;
+  flex-grow: 0;
+  font-family: "Chilanka", sans-serif;
+  background-color: transparent;
+  color: lightgray;
+}
+.game-button:hover {
+  border: 1px solid white;
+  color: white;
+}
+.game-label {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 100%;
+  flex-grow: 0;
+  font-family: "Chilanka", sans-serif;
+  background-color: transparent;
+  color: white;
+}
+.game-cell-size {
+  height: 1rem;
+  font-size: 100%;
+  font-family: "Chilanka", sans-serif;
+}
+.game-count-down {
+  padding: 0.1rem;
+  height: 1rem;
+  width: 3rem;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 100%;
+  border: 1px solid white;
+  border-radius: 0.3rem;
+  font-family: "Chilanka", sans-serif;
+  color: black;
+  background-color: white;
+}
+.game-input {
+  margin: 0.2rem;
+  height: 1rem;
+  width: 3rem;
+  border: 1px solid white;
+  border-radius: 0.3rem;
+  font-size: 100%;
+  text-align: center;
+  font-family: "Chilanka", sans-serif;
+}
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+}
+.play-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  vertical-align: middle;
+  flex-grow: 1;
+  /* border: 1px solid white; */
+}

@@ -1,0 +1,4 @@
+[submodule "minesweeper-on-rust"]
+	path = minesweeper-on-rust
+	url = git@github.com:olegkas4/minesweeper-on-rust.git
+	branch = master
