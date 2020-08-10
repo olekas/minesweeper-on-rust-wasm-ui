@@ -3,7 +3,7 @@ body {
   height: 100vh;
   background-image: url("./img/alien-planet.jpg");
   background-size: cover;
-  background-position: center;
+  background-position:  center bottom;
   margin: 0;
 }
 .cell {
