@@ -8,7 +8,7 @@
 ![Games screen](docs/screen01.png)
 
 # Web + Rust + WebAssembly 
-This game as developed in attempt to learn and practice more in using Rust in front end web development. It was inspired by Game of life example which can be found here: https://rustwasm.github.io/docs/book/game-of-life/setup.html. Below setup instructions in general repeat Game of life docs but less detailed.
+This game is developed in attempt to learn and practice more in using Rust in front end web development. It was inspired by Game of life example which can be found here: https://rustwasm.github.io/docs/book/game-of-life/setup.html. Below setup instructions in general repeat Game of life docs but less detailed.
 
 # Prerequisite 
 1. You will need the standard Rust toolchain, including rustup, rustc, and cargo:
@@ -28,6 +28,7 @@ This game as developed in attempt to learn and practice more in using Rust in fr
   ```bash
   cd minesweeper-on-rust-wasm-ui
   npm install
+  ```
 4. Build rust project into wasm package, it will create wasm folder under minesweeper-on-rust-wasm-ui folder and place there rust code converted to WebAssembly as nodejs package
   ```bash
   npm run wasm
