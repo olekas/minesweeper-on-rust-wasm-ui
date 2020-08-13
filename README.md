@@ -38,7 +38,10 @@ This game is developed in attempt to learn and practice more in using Rust in fr
   ```bash
   npm run start
   ```
-6. Open browser and go to webpack dev service url
+6. Open browser and go to webpack dev service url. URL can be found in webpack start logs, look for a line like below:
+```
+ℹ ｢wds｣: Project is running at http://localhost:8081/
+```
   
 # Game controls
 
