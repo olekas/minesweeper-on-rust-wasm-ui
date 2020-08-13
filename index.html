@@ -1,33 +1,70 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <link href="https://fonts.googleapis.com/css?family=Chilanka:400&display=swap" rel="stylesheet">
-    <title>Minesweeper on Rust</title>
-  </head>
-  <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
-    <div class="game-container">
-      <div class="game-controls">
-        <button class="game-button" id="game-btn-recreate">Recreate</button>
-        <button class="game-button" id="game-btn-replay">Replay</button>
-        <div class="game-label">Rows:</div>
-        <input class="game-input" id="rows-value" type="number"/>
-        <div class="game-label">Columns:</div>
-        <input class="game-input" id="cols-value" type="number"/>
-        <div class="game-label">% Mined:</div>
-        <input class="game-input"  id="mined-pers-value" type="number"/>
-        <div class="game-label">Count down:</div>
-        <input type="text" class="game-count-down" id="count-down-value" disabled>
-      </div> 
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link href="https://fonts.googleapis.com/css?family=Chilanka:400&display=swap" rel="stylesheet">
+  <title>Minesweeper on Rust</title>
+</head>
+
+<body>
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+  <div class="game-container">
+
     <div class="play-container">
-      <div class="grid-container"></div>
+      <div class="flex-v-border"></div>
+      <div class="row-justifier">
+        <div class="flex-h-border"></div>
+        <div class="grid-container"></div>
+        <div class="flex-h-border"></div>
+      </div>
+      <div class="flex-v-border"></div>
     </div>
+
+    <div class="col-justifier">
+      <div class="flex-v-border"></div>
+      <div class="game-control-bar">
+          <div class="game-control game-label">Current game: </div>
+          <button class="game-control game-button" id="game-btn-replay">Replay</button>
+          <div class="game-control game-label">% Mined:</div>
+          <input class="game-control game-input" id="mined-pers-value-now" type="text"  disabled/>
+          <div class="game-control game-label">Rows:</div>
+          <input class="game-control game-input" id="rows-value-now" type="text"  disabled/>
+          <div class="game-control game-label">Columns:</div>
+          <input class="game-control game-input" id="cols-value-now" type="text"  disabled/>
+          <div class="game-control game-label">Count down:</div>
+          <input type="text" class="game-control game-count-down" id="count-down-value" disabled/>
+          <div class="game-split"></div>
+          <div class="game-control game-label">Cell size:</div>
+          <select class="game-control game-button" id="game-cell-size">
+            <option value="1">x1</option>
+            <option value="2">x2</option>
+            <option value="3">x3</option>
+            <option value="4">x4</option>
+            <option value="5">x5  </option>
+          </select>
+          <div class="game-split"></div>
+          <div class="game-control game-label">New game: </div>
+          <button class="game-control game-button" id="game-btn-recreate">Create</button>
+          <div class="game-control game-label">% Mined:</div>
+          <input class="game-control game-input" id="mined-pers-value" type="number" />
+          <div class="game-control game-label">Rows:</div>
+          <input class="game-control game-size-input" id="rows-value" type="number" />
+          <button class="game-control game-size-button" id="game-btn-fit-height">Fit screen</button>
+          <div class="game-control game-label">Columns:</div>
+          <input class="game-control game-size-input" id="cols-value" type="number" />
+          <button class="game-control game-size-button" id="game-btn-fit-width">Fit screen</button>
+      </div>
+      <div class="flex-v-border"></div>
+    </div>
+
+
   </div>
   <script src="./bootstrap.js"></script>
-  </body>
+</body>
+
 </html>
