@@ -45,16 +45,16 @@ This game is developed in attempt to learn and practice more in using Rust in fr
   
 # Game controls
 
-When open in browser game creates a default mine field: based on default cell size and rying to cover 70% of height and width of play screen area and 40% of cells mined. 
+When open in browser, game creates a default mine field based on initial cell size (x2) and trying to cover 70% of height and width of play screen area with 40% of cells mined.
 - to set/remove cell flag use single mouse click
 - to dig/uncover a cell use mouse double click
 
 Controls on top right side of the game window show current game information like number of columns and rows, percentage of mined cells, number of cells left to uncover. Replay button in same control group allows to replay the game with the same set of mined cells
 
 Control on bottom right allow to define configuration for a new game. Here you can define:
-- number of columns and rows (value between 5 and 1000)
+- number of columns and rows (values between 5 and 1000)
 - percentage of mined cells (value between 10 and 90 percents)
 - "Fit screen" buttons set correspondingly number of columns and rows to fit screen width and height based on selected cell size value.
 - Having all settings ready press Create button to build new game field and/or re-shuffle mines
 
-Cell Size setting at the middle right allows to change cell size from 1 to 5 in REMs. In can be changed at any time and causes re-alinement of game grid according to the new cell size. It does not change current game state
+Cell Size setting at the middle right allows to change cell size from 1 to 5 in REMs. It can be changed at any moment and causes re-alinement of game grid according to the new cell size. It does not change current game state
