@@ -3,7 +3,7 @@
 - UI logic implemented using vanilla JS
 - Game logic is implemented in Rust and attached as WebAssembly pakage
   
-  Check out logic implementation here: https://github.com/olegkas4/minesweeper-on-rust
+  Check out logic implementation here: https://github.com/olekas/minesweeper-on-rust
  
 ![Games screen](docs/screen01.png)
 
