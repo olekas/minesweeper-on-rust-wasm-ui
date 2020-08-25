@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/olegkas4/minesweeper-on-rust-wasm-ui.git"
+    "url": "git+https://github.com/olekas/minesweeper-on-rust-wasm-ui.git"
   },
   "keywords": [
     "webassembly",
@@ -21,9 +21,9 @@
   "author": "Oleg Kashaev <oleg.kashaev.4@gmail.com>",
   "license": "(MIT OR Apache-2.0)",
   "bugs": {
-    "url": "https://github.com/olegkas4/minesweeper-on-rust-wasm-ui/issues"
+    "url": "https://github.com/olekas/minesweeper-on-rust-wasm-ui/issues"
   },
-  "homepage": "https://github.com/olegkas4/minesweeper-on-rust-wasm-ui#readme",
+  "homepage": "https://github.com/olekas/minesweeper-on-rust-wasm-ui#readme",
   "devDependencies": {
     "copy-webpack-plugin": "^5.0.0",
     "wasm-opt": "^1.1.1",
