@@ -22,7 +22,7 @@ This game is developed in attempt to learn and practice more in using Rust in fr
 
 1. Clone repo with recursion to grab Rust submodule 
   ```bash
-  git clone --recurse-submodules git@github.com:olegkas4/minesweeper-on-rust-wasm-ui.git
+  git clone --recurse-submodules git@github.com:olekas/minesweeper-on-rust-wasm-ui.git
   ```
 3. Install necessary nodejs packages
   ```bash
